@@ -1,0 +1,111 @@
+@import '../../App'
+
+textarea, input[type="text"], input[type="email"]
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+.contact-container
+    margin: 0 auto
+    padding: 100px 16px
+    max-width: 1200px
+
+    .contact-title
+        font-size: 44px
+        font-weight: bold
+
+    .contact-box
+        margin: 40px 0 0 0
+
+        .contact-right
+            .contact-form
+                .contact-form-label
+                    display: block
+                    margin: 20px 0 1px 0
+
+                .contact-input
+                    width: 100%
+                    outline: none
+                    border: 1px solid black
+                    padding: 10px
+                    font-size: 18px
+                    border-radius: 0px
+                    -webkit-border-radius: 0px
+
+                    &:focus
+                        border-color: $primary-color
+                        color: $primary-color
+
+                .contact-textarea
+                    resize: none
+                    height: 180px
+                    border-radius: 0px
+                    -webkit-border-radius: 0px
+
+                .contact-button
+                    background-color: $primary-color
+                    color: white
+                    border: none
+                    border-radius: 0px
+                    font-size: 22px
+                    height: 60px
+                    width: 170px
+                    cursor: pointer
+                    outline: none
+                    transition-duration: 0.2s
+                    margin-top: 20px
+
+                    &:hover
+                        background-color: $hover-color
+
+                    &:disabled
+                        background-color: #ebebeb
+
+                .contact-message-status
+                    position: absolute
+                    margin-top: 5px
+
+        .contact-left
+            .contact-description
+                .contact-email
+                    color: $primary-color
+
+@media only screen and (min-width: 768px)
+    .contact-container
+        .contact-box
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-areas: "contact-left contact-right"
+            gap: 0 30px
+
+            .contact-left
+                grid-area: contact-left
+
+                .contact-description
+                    font-size: 22px
+                    line-height: 32px
+
+            .contact-right
+                grid-area: contact-right
+
+                .contact-form
+                    .contact-form-label:first-child
+                        margin: 0
+
+@media only screen and (min-width: 1200px)
+    .contact-container
+        padding: 150px 0
+
+        .contact-title
+            font-size: 64px
+
+        .contact-box
+            .contact-left
+                .contact-description
+                    font-size: 30px
+                    line-height: 42px
+
+            .contact-right
+                .contact-form
+                    .contact-form-label
+                        font-size: 22px

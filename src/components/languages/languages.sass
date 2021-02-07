@@ -1,0 +1,45 @@
+@import '../../App'
+
+.languages-container
+    margin: 0 auto
+    padding: 100px 16px
+    max-width: 1200px
+
+    .languages-title
+        font-size: 44px
+        font-weight: bold
+
+    .languages-grid
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        justify-items: center
+        background-color: rgba(0, 0, 0, 0.03)
+        padding: 15px
+        margin-top: 40px
+        gap: 25px 15px
+
+        .language
+            height: 46px
+
+@media only screen and (min-width: 768px)
+    .languages-container
+        .languages-grid
+            padding: 45px
+            row-gap: 45px
+
+            .language
+                height: 65px
+
+@media only screen and (min-width: 1200px)
+    .languages-container
+        padding: 150px 0
+
+        .languages-title
+            font-size: 64px
+
+        .languages-grid
+            padding: 65px
+            row-gap: 55px
+
+            .language
+                height: 85px

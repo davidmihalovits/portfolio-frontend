@@ -1,0 +1,202 @@
+@import '../../App'
+
+.project-remotedev
+    margin: 0 auto
+    padding: 100px 16px
+    max-width: 1200px
+
+    .project-remotedev-right
+        width: 100%
+        height: 100%
+
+        .project-image
+            width: 100%
+            height: 100%
+
+    .project-remotedev-left
+        .project-description
+            margin-top: 15px
+            line-height: 26px
+            font-size: 18px
+            font-weight: normal
+
+        .project-remotedev-left-buttons
+            margin: 15px 0 0 0
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 0 16px
+
+            .button-link
+                text-decoration: none
+
+                .visit-button
+                    border: 1px solid $primary-color
+                    color: $primary-color
+                    border-radius: 0px
+                    outline: none
+                    cursor: pointer
+                    text-transform: unset
+                    width: 100%
+                    padding: 12px 0
+
+                    &:hover
+                        border: 1px solid $primary-color
+                        color: $primary-color
+                        background-color: rgba(0, 0, 0, 0.03)
+
+                    .button-icon
+                        width: 18px
+                        height: 18px
+                        margin: 0 5px 0 0
+
+    .feature-title
+        font-size: 44px
+        font-weight: bold
+        margin-top: 70px
+
+    .feature, .feature-middle
+        background-color: rgba(0, 0, 0, 0.03)
+        padding: 15px
+        margin-top: 40px
+        display: grid
+
+        .feature-description
+            display: grid
+            grid-template-columns: 30px 1fr
+            margin-top: 25px
+
+            .checkmark
+                width: 20px
+                height: 20px
+                align-self: center
+
+        .feature-right
+            box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2)
+            width: 100%
+            height: 100%
+
+            .feature-image
+                width: 100%
+                height: 100%
+
+@media only screen and (min-width: 768px)
+    .project-remotedev
+        .project-description
+            margin-top: 0
+
+        .project-remotedev-flex
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-areas: "project-remotedev-left project-remotedev-right"
+            gap: 0 30px
+
+            .project-remotedev-right
+                grid-area: project-remotedev-right
+
+            .project-remotedev-left
+                grid-area: project-remotedev-left
+                display: grid
+
+                .project-description
+                    margin: 0
+
+                .project-remotedev-left-buttons
+                    margin: 0
+                    gap: 0 24px
+                    align-self: end
+
+        .feature
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-areas: "feature-left feature-right"
+            align-items: center
+            gap: 0 30px
+            padding: 25px
+
+            .feature-right
+                grid-area: feature-right
+                width: 100%
+                height: 100%
+
+                .feature-image
+                    width: 100%
+                    height: 100%
+
+            .feature-left
+                grid-area: feature-left
+
+                .feature-description:first-child
+                    margin: 0
+
+        .feature-middle
+            display: grid
+            grid-template-columns: 1fr 1fr
+            align-items: center
+            gap: 0 30px
+            padding: 25px
+
+            .feature-right
+                width: 100%
+                height: 100%
+
+                .feature-image
+                    width: 100%
+                    height: 100%
+
+            .feature-left
+                .feature-description:first-child
+                    margin: 0
+
+@media only screen and (min-width: 1024px)
+    .project-remotedev
+        .project-remotedev-flex
+            grid-template-columns: 1fr 1.5fr
+
+            .project-description
+                line-height: 36px
+                font-size: 26px
+
+@media only screen and (min-width: 1200px)
+    .project-remotedev
+        padding: 120px 0 150px 0
+
+        .project-remotedev-flex
+            .project-description
+                line-height: 52px
+                font-size: 36px
+
+            .project-remotedev-left-buttons
+                .button-link
+                    .visit-button
+                        font-size: 18px
+
+        .feature-title
+            font-size: 64px
+            font-weight: bold
+            margin-top: 100px
+
+        .feature
+            padding: 120px 45px
+
+            .feature-left
+                .feature-description
+                    grid-template-columns: 45px 1fr
+                    font-size: 26px
+                    margin-top: 40px
+
+                    .checkmark
+                        width: 30px
+                        height: 30px
+
+        .feature-middle
+            padding: 120px 30px
+
+            .feature-left
+                .feature-description
+                    grid-template-columns: 45px 1fr
+                    font-size: 26px
+                    margin-top: 40px
+
+                    .checkmark
+                        width: 30px
+                        height: 30px

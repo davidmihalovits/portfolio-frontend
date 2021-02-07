@@ -1,0 +1,40 @@
+@import '../../App'
+
+.about-container
+    background-color: black
+    color: white
+
+    .about-inner
+        margin: 0 auto
+        padding: 30px 16px 100px 16px
+        max-width: 1200px
+
+        .about
+            .about-icon
+                margin-top: 70px
+
+            .about-title
+                font-size: 26px
+                font-weight: bold
+                margin-top: 15px
+
+            .about-paragraph
+                margin-top: 15px
+                line-height: 26px
+
+@media only screen and (min-width: 768px)
+    .about-container
+        .about-inner
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            gap: 0 15px
+
+@media only screen and (min-width: 1200px)
+    .about-container
+        .about-inner
+            padding: 150px 0
+            gap: 0 55px
+
+            .about
+                .about-icon
+                    margin-top: 0px

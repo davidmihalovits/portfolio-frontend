@@ -1,0 +1,23 @@
+$primary-color: #304FFE
+$hover-color: #0026ff
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto'
+    font-weight: normal
+
+    ::selection
+        background-color: $hover-color
+        color: white
+
+//scroll-bar color - all
+::-webkit-scrollbar
+    width: 15px
+::-webkit-scrollbar-thumb
+    background-color: $primary-color
+
+//scroll-bar color - firefox only
+html
+    scrollbar-color: $primary-color white

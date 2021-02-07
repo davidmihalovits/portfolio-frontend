@@ -1,0 +1,103 @@
+@import '../../App'
+
+.projects-container
+    background-color: black
+    color: white
+
+    .projects-inner
+        margin: 0 auto
+        padding: 100px 16px
+        max-width: 1200px
+
+        .projects-title
+            font-size: 44px
+            font-weight: bold
+            margin-bottom: -50px
+
+        .projects
+            .project
+                margin: 90px 0 0 0
+
+                .project-title
+                    font-size: 26px
+                    font-weight: bold
+                    margin-top: 15px
+
+                .project-image
+                    width: 100%
+                    object-fit: cover
+
+                .project-paragraph
+                    margin-top: 15px
+                    line-height: 22px
+
+                .project-hashtags
+                    margin-top: 15px
+                    line-height: 22px
+                    font-size: 14px
+                    word-spacing: 14px
+                    color: #7c7c7c
+
+                .project-buttons
+                    display: grid
+                    grid-template-columns: 110px 110px
+                    margin-top: 15px
+                    gap: 0 15px
+
+                    .projects-button-link
+                        .project-button
+                            background-color: $primary-color
+                            color: white
+                            border: 2px solid $primary-color
+                            border-radius: 0px
+                            font-size: 14px
+                            padding: 8px 0
+                            cursor: pointer
+                            outline: none
+                            transition-duration: 0.2s
+                            width: 100%
+
+                            &:hover
+                                background-color: $hover-color
+                                border: 2px solid $hover-color
+
+                        .project-button2
+                            background-color: black
+                            color: white
+                            border: 2px solid $primary-color
+                            border-radius: 0px
+                            font-size: 14px
+                            padding: 8px 0
+                            cursor: pointer
+                            outline: none
+                            transition-duration: 0.2s
+                            width: 100%
+
+                            &:hover
+                                background-color: $hover-color
+                                border: 2px solid $hover-color
+
+@media only screen and (min-width: 768px)
+    .projects-container
+        .projects-inner
+            .projects-title
+                margin-bottom: 40px
+
+            .projects
+                display: grid
+                grid-template-columns: 1fr 1fr
+                gap: 60px
+
+                .project
+                    margin: 0
+
+@media only screen and (min-width: 1200px)
+    .projects-container
+        .projects-inner
+            padding: 150px 0
+
+            .projects-title
+                font-size: 64px
+
+            .projects
+                gap: 120px

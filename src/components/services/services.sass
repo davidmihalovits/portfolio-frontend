@@ -1,0 +1,88 @@
+@import '../../App'
+
+.services-container
+    padding: 100px 16px
+    margin: 0 auto
+    max-width: 1200px
+
+    .methodology-link
+        text-decoration: none 
+        
+        .methodology-button
+            text-transform: unset
+            font-size: 18px
+            background-color: $primary-color
+            border: none
+            border-radius: 0px
+            color: white
+            padding: 15px 38px
+            margin-top: 40px
+
+            &:hover
+                background-color: $hover-color
+
+    .services-title
+        font-size: 44px
+        font-weight: bold
+    
+    .services
+        margin: 40px 0 0 0 
+
+        .service
+            background-color: rgba(0, 0, 0, 0.03)
+            border-radius: 0px
+            padding: 0 15px
+            margin: 20px 0
+            height: 110px
+            display: grid
+            grid-template-columns: 42px 1fr
+                
+            .paragraph
+                line-height: 22px
+                align-self: center
+
+            .checkmark
+                width: 30px
+                height: 30px
+                align-self: center
+
+@media only screen and (min-width: 768px)
+    .services-container
+        .services
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr 1fr
+            justify-items: center
+            gap: 30px
+
+            .service
+                margin: 0
+
+@media only screen and (min-width: 1024px)
+    .services-container
+        .services
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            justify-items: center
+            gap: 40px
+
+            .service
+                height: 150px
+
+@media only screen and (min-width: 1200px)
+    .services-container
+        padding: 150px 0
+
+        .methodology-link
+            .methodology-button
+                font-size: 24px
+
+        .services-title
+            font-size: 64px
+
+        .services
+            gap: 60px
+
+            
+

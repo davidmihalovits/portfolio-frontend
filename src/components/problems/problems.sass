@@ -1,0 +1,78 @@
+@import '../../App'
+
+.problems-container
+    background-color: $primary-color
+    color: white
+
+    .problems-content
+        margin: 0 auto
+        padding: 100px 16px
+        max-width: 1200px
+
+        .problems-title
+            font-size: 44px
+            font-weight: bold
+
+        .problems
+            margin-top: 40px
+
+            .problem
+                margin-top: 40px
+                color: white
+
+                .problem-title
+                    font-size: 26px
+                    font-weight: bold
+
+                .problem-box
+                    line-height: 22px
+                    display: grid
+                    grid-template-columns: 32px 1fr
+                    margin-top: 15px
+
+                    .cross
+                        width: 22px
+                        height: 22px
+
+                    .checkmark
+                        width: 22px
+                        height: 22px
+
+                    .problem-span
+                        .bold
+                            font-weight: bold 
+                        
+                        .normal
+                            font-weight: 300
+
+@media only screen and (min-width: 768px)
+    .problems-container
+        .problems-content
+            .problems
+                display: grid
+                grid-template-columns: 1fr 1fr
+                gap: 60px
+
+                .problem
+                    margin: 0
+
+@media only screen and (min-width: 1024px)
+    .problems-container
+        .problems-content            
+            .problems
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                gap: 60px
+
+@media only screen and (min-width: 1200px)
+    .problems-container
+        .problems-content
+            padding: 150px 0
+
+            .problems-title
+                font-size: 64px
+            
+            .problems
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                gap: 60px 120px

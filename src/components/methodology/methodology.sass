@@ -1,0 +1,70 @@
+@import '../../App'
+
+.methodology-container
+    margin: 0 auto
+    padding: 100px 16px 0 16px
+    max-width: 1200px
+
+    .methodology-title
+        font-size: 44px
+        font-weight: bold
+
+    .methods
+        margin-top: 40px
+
+        .method:nth-child(even)
+            background-color: $primary-color
+
+        .method
+            margin-top: 40px
+            background-color: black
+            color: white
+            padding: 15px
+
+            .method-image
+                width: 70px
+                height: 70px
+
+            .method-title
+                font-size: 26px
+                font-weight: bold
+                margin: 15px 0 0 0
+
+            .method-description
+                line-height: 22px
+                margin: 15px 0 0 0
+
+@media only screen and (min-width: 768px)
+    .methodology-container
+        .methods
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            justify-items: center
+            gap: 30px
+
+            .method
+                margin-top: 0px
+
+@media only screen and (min-width: 1200px)
+    .methodology-container
+        padding: 120px 0 0 0
+
+        .methodology-title
+            font-size: 64px
+
+        .methods
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            justify-items: center
+            gap: 40px 40px
+
+            .method
+                padding: 25px
+
+                .method-title
+                    margin: 25px 0 0 0
+
+                .method-description
+                    margin: 25px 0 0 0
